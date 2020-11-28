@@ -26,7 +26,7 @@ namespace Server_Try02
             var mysqlconnection = Configuration.GetConnectionString("DefaultConnection"); // get db connection from json file
             services.AddScoped<IUserService,UserService>();
 
-            services.AddDbContextPool<locationContext>(options => 
+            services.AddDbContext<locationContext>(options => 
                 options.UseMySql(mysqlconnection,
                     new MySqlServerVersion(new Version(10, 4, 13)))); // use MariaDbServerVersion for MariaDB
 
