@@ -8,8 +8,9 @@ namespace server_new_try
     public class ServiceResponse<T>
     {
         public T Data { get; set; }
-        public bool Succes { get; set; } = true;
+        public bool Success { get; set; } = true;
         public String Message { get; set; } = null;
+        public List<String> Errors { get; set; } = new List<String>();
 
     }
 }

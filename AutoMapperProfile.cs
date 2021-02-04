@@ -8,7 +8,9 @@ namespace Server_Try02
     {
         public AutoMapperProfile()
         {
-            CreateMap<User,GetUserDto>();
+            CreateMap<UserModel,GetUserDto>();
+            CreateMap<RegisterUserDto,UserModel>();
+            CreateMap<UserModel,UserHistModel>();
         }
     }
 }
