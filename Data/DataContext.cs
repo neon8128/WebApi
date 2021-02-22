@@ -33,7 +33,7 @@ namespace WebApi.Data
             if (!optionsBuilder.IsConfigured)
             {
 
-                optionsBuilder.UseMySql("Server=neondata.mysql.database.azure.com; Port=3306; Database=proiect ; Uid=admin_david@neondata; Pwd=Superparola22; SslMode=Preferred;", Microsoft.EntityFrameworkCore.ServerVersion.FromString("8.0.19-mysql"));
+                optionsBuilder.UseMySql("*", Microsoft.EntityFrameworkCore.ServerVersion.FromString("8.0.19-mysql"));
             }
         }
 
