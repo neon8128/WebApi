@@ -98,7 +98,7 @@ namespace Server_Try02.Services
             if (serviceResponse.Data == null)
             {
                 serviceResponse.Success = false;
-                serviceResponse.Errors.Add("Could not find selected character");
+                serviceResponse.Errors.Add("Could not find selected user");
 
             }
             return serviceResponse;

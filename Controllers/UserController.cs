@@ -35,6 +35,7 @@ namespace Server_Try02.Controllers
         public async Task<IActionResult> GetAllUsers()
         {
 
+           
             return Ok(await _userService.GetAllUsers());
         }
 

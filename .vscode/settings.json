@@ -1,4 +1,6 @@
 {
     "editor.accessibilityPageSize": 1,
-    "editor.fontSize": 22
+    "editor.fontSize": 22,
+    "appService.preDeployTask": "publish-release",
+    "appService.deploySubpath": "bin/Release/netcoreapp3.1/publish"
 }
