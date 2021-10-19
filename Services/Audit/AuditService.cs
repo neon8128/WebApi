@@ -35,7 +35,7 @@ namespace Server_Try02.Services
             audit.Username = GetUserName();
             audit.Details = Message;
             audit.MachineName = System.Environment.MachineName;
-           await  _context.DbAudit.AddAsync(audit);
+            await  _context.DbAudit.AddAsync(audit);
             await _context.SaveChangesAsync();
 
             return audit.Id;

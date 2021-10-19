@@ -1,16 +1,8 @@
 using System;
-using System.Collections.Generic;
-using System.Data.Common;
-using System.IdentityModel.Tokens.Jwt;
-using System.Security.Claims;
-using System.Text;
 using System.Threading.Tasks;
 using AutoMapper;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.IdentityModel.Tokens;
-using MySql.Data.MySqlClient;
 using server_new_try;
-using server_new_try.DTOs;
 using Server_Try02.Models;
 using Server_Try02.Services;
 using WebApi.Hashing;
@@ -22,8 +14,6 @@ namespace WebApi.Data
         private readonly DataContext _context;
         private readonly IAuditService _audit;
         private readonly IMapper _mapper;
-
-
 
         public AuthRepository(DataContext Context, IAuditService Audit, IMapper Mapper)
         {
